@@ -1,0 +1,28 @@
+---
+title: "data visualization"
+author: "Babu owino"
+date: "3/14/2022"
+output: html_document
+<!----->
+```{r}
+library(tidyverse)
+```
+```{r}
+data(mpg)
+```
+```{r}
+glimpse(mpg)
+```
+```{r}
+View(mpg)
+```
+```{r}
+table(mpg$manufacturer)
+```
+```{r}
+ggplot(data=mpg)+geom_point(mapping =aes( x = displ, y = hwy))
+```
+```{r}
+ggplot(data=mpg)+geom_point(mapping = aes(x=displ,y=hwy,color=class))
+```
+
