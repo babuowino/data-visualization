@@ -20,9 +20,21 @@ View(mpg)
 table(mpg$manufacturer)
 ```
 ```{r}
-ggplot(data=mpg)+geom_point(mapping =aes( x = displ, y = hwy))
+
 ```
 ```{r}
 ggplot(data=mpg)+geom_point(mapping = aes(x=displ,y=hwy,color=class))
+```
+```{r}
+ggplot(data=mpg)+geom_point(mapping =aes( x = displ, y = hwy,alpha=class))
+```
+```{r}
+ggplot(data=mpg)+geom_point(mapping = aes(x=displ,y=hwy,color='purple'))
+```
+```{r}
+ggplot(data=mpg)+geom_smooth(mapping = aes(x=displ,y=hwy,color=class))
+```
+```{r}
+geom_point(mapping = aes(x=displ,y=hwy))
 ```
 
